@@ -1,14 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div class="vue-tempalte">
+    <!-- Navigation -->
+   
+        <Navigation></Navigation>
+     
+
+    <!-- Main -->
+    <div class="App">
+      <div class="vertical-center">
+        <div class="inner-block">
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Navigation from "./components/Navigation";
 export default {
-  name: 'App'
-}
+  name: "app",
+  components: {
+    Navigation: Navigation
+  }
+};
 </script>
 
 <style>
