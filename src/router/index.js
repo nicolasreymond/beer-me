@@ -34,9 +34,9 @@ export default new Router({
       component: ContactPage
     },
     // otherwise redirect to home
-    {
-      path: '*',
-      redirect: '/'
-    }
+    // {
+    //   path: '*',
+    //   redirect: '/'
+    // }
   ]
 })
