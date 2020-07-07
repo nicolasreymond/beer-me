@@ -1,8 +1,9 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="Home">NavBar</b-navbar-brand>
-
+      <b-navbar-brand to="/Home">
+        <b-img src="../assets/BeerMe.png" alt="Responsive image"></b-img>
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -22,13 +23,6 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</b-nav-item>
-
-          <!-- Using 'button-content' slot -->
-          <!-- <template v-slot:button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item><router-link :to="{links.id: 1}">Login</router-link></b-dropdown-item>
-          <b-dropdown-item>Register</b-dropdown-item>-->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -43,8 +37,8 @@ export default {
       linksL: [
         {
           id: 0,
-          text: "Home",
-          page: "/Home"
+          text: "Abonnement",
+          page: "/Abo"
         },
         {
           id: 1,
@@ -78,5 +72,8 @@ export default {
 <style>
 .spacing {
   margin-right: 10%;
+}
+#logo {
+  width: 30%;
 }
 </style>
