@@ -43,18 +43,18 @@ export default {
       linksL: [
         {
           id: 0,
-          text: "Home",
-          page: "/Home"
-        },
-        {
-          id: 1,
           text: "News",
           page: "/News"
         },
         {
-          id: 2,
+          id: 1,
           text: "Contact",
           page: "/Contact"
+        },
+        {
+          id: 2,
+          text: "Drinks",
+          page: "/drinks"
         }
       ],
 
