@@ -1,6 +1,6 @@
 <template>
     <div class="drink-cards">
-        <b-card-group deck>
+        <b-card-group deck class="m-2">
             <b-card
                 title="Leffe"
                 img-src="https://images.interdrinks.com/v5/img/p/1304-50351-w786-h540-transparent.png"
