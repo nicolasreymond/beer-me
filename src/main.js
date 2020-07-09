@@ -9,6 +9,9 @@ import {
 } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import axios from 'axios'
+
+Vue.prototype.$http = axios
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
