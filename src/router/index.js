@@ -40,9 +40,9 @@ export default new Router({
       component: DrinksMenu
     },
     // otherwise redirect to home
-    // {
-    //   path: '*',
-    //   redirect: '/'
-    // }
+    {
+      path: '*',
+      redirect: '/'
+    }
   ]
 })

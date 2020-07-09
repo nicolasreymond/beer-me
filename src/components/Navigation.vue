@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="Home"><b-img :src="require('../assets/BeerMe.svg')" width="40" alt="placeholder"></b-img></b-navbar-brand>
+      <b-navbar-brand to="Home"><b-img :src="require('../assets/BeerMe.svg')" width="40" alt="placeholder"></b-img></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
