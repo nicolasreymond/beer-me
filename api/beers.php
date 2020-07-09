@@ -6,7 +6,7 @@
 	function getBeers()
 	{
 		
-		$query = "SELECT * FROM beers ORDER BY id DESC LIMIT 50";
+		$query = "SELECT * FROM beers ORDER BY id LIMIT 50";
 		$response = array();
 		$stmt = EDatabase::prepare($query);
 		$stmt->execute(array(':id' => $id));
