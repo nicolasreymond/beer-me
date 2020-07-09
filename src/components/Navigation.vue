@@ -23,6 +23,13 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
           >{{routes.text}}</b-nav-item>
+          <b-avatar></b-avatar>
+          <!-- Using 'button-content' slot -->
+          <!-- <template v-slot:button-content>
+              <em>User</em>
+            </template>
+            <b-dropdown-item><router-link :to="{links.id: 1}">Login</router-link></b-dropdown-item>
+          <b-dropdown-item>Register</b-dropdown-item>-->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -46,9 +53,14 @@ export default {
           page: "/News"
         },
         {
-          id: 2,
+          id: 1,
           text: "Contact",
           page: "/Contact"
+        },
+        {
+          id: 2,
+          text: "Drinks",
+          page: "/drinks"
         }
       ],
 
