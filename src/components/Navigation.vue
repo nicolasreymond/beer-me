@@ -63,7 +63,7 @@ export default {
         {
           id: 4,
           text: "Register",
-          page: "/signup"
+          page: "/register"
         }
       ]
     };
