@@ -1,9 +1,8 @@
 <template>
   <div class="vue-tempalte">
     <!-- Navigation -->
-   
-        <Navigation></Navigation>
-     
+
+    <Navigation></Navigation>
 
     <!-- Main -->
     <div class="App">
