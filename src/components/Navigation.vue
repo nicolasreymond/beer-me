@@ -1,9 +1,10 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand to="/Home">
-        <b-img src="../assets/BeerMe.png" alt="Responsive image"></b-img>
+    <b-navbar toggleable="lg" class="dark">
+      <b-navbar-brand to="Home">
+        <b-img :src="require('../assets/BeerMe.svg')" width="40" alt="placeholder"></b-img>
       </b-navbar-brand>
+
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -44,8 +45,8 @@ export default {
       linksL: [
         {
           id: 0,
-          text: "Abonnement",
-          page: "/Abo"
+          text: "Home",
+          page: "/Home"
         },
         {
           id: 1,
@@ -53,12 +54,12 @@ export default {
           page: "/News"
         },
         {
-          id: 1,
+          id: 2,
           text: "Contact",
           page: "/Contact"
         },
         {
-          id: 2,
+          id: 3,
           text: "Drinks",
           page: "/drinks"
         }
@@ -85,7 +86,7 @@ export default {
 .spacing {
   margin-right: 10%;
 }
-#logo {
-  width: 30%;
+.dark {
+  background-color: rgb(0, 0, 0) !important;
 }
 </style>
