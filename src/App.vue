@@ -34,4 +34,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@font-face {
+  font-family: Lekton;
+  src: url(Lekton-Bold.ttf);
+}
 </style>
