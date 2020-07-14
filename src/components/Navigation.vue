@@ -1,7 +1,9 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand to="Home"><b-img :src="require('../assets/BeerMe.svg')" width="40" alt="placeholder"></b-img></b-navbar-brand>
+    <b-navbar toggleable="lg">
+      <b-navbar-brand to="Home">
+        <b-img :src="require('../assets/BeerMe.svg')" width="60" alt="placeholder"></b-img>
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -21,6 +23,7 @@
             v-for="routes in linksR"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
+            router-link-active
           >{{routes.text}}</b-nav-item>
           <b-avatar></b-avatar>
           <!-- Using 'button-content' slot -->
@@ -43,16 +46,21 @@ export default {
       linksL: [
         {
           id: 0,
+          text: "Home",
+          page: "/Home"
+        },
+        {
+          id: 1,
           text: "News",
           page: "/News"
         },
         {
-          id: 1,
+          id: 2,
           text: "Contact",
           page: "/Contact"
         },
         {
-          id: 2,
+          id: 3,
           text: "Drinks",
           page: "/drinks"
         }
@@ -76,7 +84,23 @@ export default {
 </script>
 
 <style>
-.spacing {
+.navbar{
+  background-color: rgb(0, 0, 0) !important;
+
+}
+.nav-link {
+  color: white !important;
+  font-family: "Lekton";
+  font-weight: bold;
   margin-right: 10%;
+}
+.nav-link:hover {
+  color: yellow !important;
+}
+
+nav li a{
+  color: white;
+  font-family: "Lekton";
+  font-weight: bold;
 }
 </style>
