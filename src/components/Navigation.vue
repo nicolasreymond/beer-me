@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" class="dark">
+    <b-navbar toggleable="lg">
       <b-navbar-brand to="Home">
-        <b-img :src="require('../assets/BeerMe.svg')" width="40" alt="placeholder"></b-img>
+        <b-img :src="require('../assets/BeerMe.svg')" width="60" alt="placeholder"></b-img>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -23,6 +23,7 @@
             v-for="routes in linksR"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
+            router-link-active
           >{{routes.text}}</b-nav-item>
           <b-avatar></b-avatar>
           <!-- Using 'button-content' slot -->
@@ -83,10 +84,23 @@ export default {
 </script>
 
 <style>
-.spacing {
+.navbar{
+  background-color: rgb(0, 0, 0) !important;
+
+}
+.nav-link {
+  color: white !important;
+  font-family: "Lekton";
+  font-weight: bold;
   margin-right: 10%;
 }
-.dark {
-  background-color: rgb(0, 0, 0) !important;
+.nav-link:hover {
+  color: yellow !important;
+}
+
+nav li a{
+  color: white;
+  font-family: "Lekton";
+  font-weight: bold;
 }
 </style>
