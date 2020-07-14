@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
 import NewsPage from '@/components/NewsPage'
 import LoginPage from '@/components/LoginPage'
-import Signup from '@/components/Signup'
+import Register from '@/components/RegisterPage'
 import ContactPage from '@/components/ContactPage'
 import DrinksMenu from '@/components/DrinksMenu'
 Vue.use(Router)
@@ -25,9 +25,9 @@ export default new Router({
       component: LoginPage
     },
     {
-      path: '/signup',
-      name: 'Signup',
-      component: Signup
+      path: '/register',
+      name: 'Register',
+      component: Register
     },
     {
       path: '/contact',
@@ -40,9 +40,9 @@ export default new Router({
       component: DrinksMenu
     },
     // otherwise redirect to home
-    // {
-    //   path: '*',
-    //   redirect: '/'
-    // }
+    {
+      path: '*',
+      redirect: '/'
+    }
   ]
 })

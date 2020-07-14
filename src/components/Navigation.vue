@@ -75,7 +75,7 @@ export default {
         {
           id: 1,
           text: "Register",
-          page: "/signup"
+          page: "/register"
         }
       ]
     };
