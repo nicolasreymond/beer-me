@@ -1,8 +1,8 @@
 <template>
   <div>
     <b-navbar toggleable="lg">
-      <b-navbar-brand to="Home">
-        <b-img :src="require('../assets/BeerMe.svg')" width="60" alt="placeholder"></b-img>
+      <b-navbar-brand href="/">
+        <b-img :src="require('../assets/BeerMe.svg')" class="img" alt="placeholder"></b-img>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -13,6 +13,8 @@
             v-for="routes in linksL"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
+            class="yellow"
+            router-link-active
           >{{routes.text}}</b-nav-item>
         </b-navbar-nav>
 
@@ -24,15 +26,10 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
             router-link-active
+            class="yellow"
           >{{routes.text}}</b-nav-item>
-          <b-avatar></b-avatar>
-          <!-- Using 'button-content' slot -->
-          <!-- <template v-slot:button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item><router-link :to="{links.id: 1}">Login</router-link></b-dropdown-item>
-          <b-dropdown-item>Register</b-dropdown-item>-->
         </b-navbar-nav>
+        <b-avatar></b-avatar>
       </b-collapse>
     </b-navbar>
   </div>
@@ -47,17 +44,17 @@ export default {
         {
           id: 0,
           text: "Home",
-          page: "/Home"
+          page: "/home"
         },
         {
           id: 1,
           text: "News",
-          page: "/News"
+          page: "/news"
         },
         {
           id: 2,
           text: "Contact",
-          page: "/Contact"
+          page: "/contact"
         },
         {
           id: 3,
@@ -70,7 +67,7 @@ export default {
         {
           id: 0,
           text: "Login",
-          page: "/Login"
+          page: "/login"
         },
         {
           id: 1,
@@ -84,23 +81,31 @@ export default {
 </script>
 
 <style>
-.navbar{
-  background-color: rgb(0, 0, 0) !important;
-
+.navbar {
+  background-color: rgb(0, 0, 0);
 }
-.nav-link {
+
+.img {
+  width: 100px;
+  margin: 10px 50px 10px 10px;
+  background-color: black;
+}
+
+a.nav-link {
+  font-family: "Lekton";
+  font-weight: bold;
+  font-size: large;
   color: white !important;
-  font-family: "Lekton";
-  font-weight: bold;
-  margin-right: 10%;
+  padding: 0px 2px !important;
 }
-.nav-link:hover {
-  color: yellow !important;
+.nav-item {
+  margin-right: 40px;
+  margin-top: 10px;
 }
-
-nav li a{
-  color: white;
-  font-family: "Lekton";
-  font-weight: bold;
+.nav-item:hover {
+  background: linear-gradient(0deg, #ffe300 50%, #fff0 50%);
+}
+.router-link-active {
+  background: linear-gradient(0deg, #ffe300 50%, #fff0 50%);
 }
 </style>
