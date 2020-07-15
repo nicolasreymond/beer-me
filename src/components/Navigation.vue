@@ -13,6 +13,8 @@
             v-for="routes in linksL"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
+            class="yellow"
+            router-link-active
           >{{routes.text}}</b-nav-item>
         </b-navbar-nav>
 
@@ -24,6 +26,7 @@
             v-bind:key="routes.id"
             :to="`${routes.page}`"
             router-link-active
+            class="yellow"
           >{{routes.text}}</b-nav-item>
           <b-avatar></b-avatar>
           <!-- Using 'button-content' slot -->
@@ -84,23 +87,27 @@ export default {
 </script>
 
 <style>
-.navbar{
-  background-color: rgb(0, 0, 0) !important;
-
+.navbar {
+  background-color: rgb(0, 0, 0);
 }
 .nav-link {
-  color: white !important;
   font-family: "Lekton";
   font-weight: bold;
   margin-right: 10%;
-}
-.nav-link:hover {
-  color: yellow !important;
+  color: white !important;
 }
 
-nav li a{
-  color: white;
-  font-family: "Lekton";
-  font-weight: bold;
+.nav-item {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  padding: 0px 5px;
+  position: relative;
+}
+.nav-item:hover {
+  background-color: rgba(231, 219, 52);
+}
+.router-link-active {
+  background-color: rgba(231, 219, 52);
 }
 </style>
