@@ -2,7 +2,7 @@
   <div class="vue-tempalte">
     <!-- Navigation -->
 
-        <Navigation></Navigation>
+    <Navigation></Navigation>
 
     <!-- Main -->
     <div class="App">
@@ -12,15 +12,18 @@
         </div>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 export default {
   name: "app",
   components: {
-    Navigation: Navigation
+    Navigation: Navigation,
+    Footer: Footer
   }
 };
 </script>
