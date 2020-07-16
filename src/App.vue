@@ -24,7 +24,7 @@ export default {
   }
 };
 </script>
-
+                
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -42,5 +42,13 @@ export default {
   font-family: Lekton;
   src: url(Lekton-Bold.ttf);
   font-weight: bold;
+}
+@font-face {
+  font-family: Lekton;
+  src: url(Lekton-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu Nerd Font";
+  src: url(UbuntuMediumNerdFontComplete.ttf);
 }
 </style>
