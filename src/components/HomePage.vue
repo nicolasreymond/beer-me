@@ -18,9 +18,6 @@
     </div>
     <div class="presentation">
       <b-card>
-        <b-media>
-          <template v-slot:aside></template>
-
           <h1 class="mt-0">
             <span class="underline">
               <span class="stabilo">Présentation de BeerMe</span>
@@ -32,7 +29,6 @@
             <br />$50
             DIY mustache tote bag godard retro gluten-free copper mug schlitz crucifix taxidermy hella before they sold out VHS blog vape. Enamel pin actually brunch literally godard. Mumblecore meditation forage, coloring book ethical single-origin coffee fingerstache mlkshk pork belly leggings pour-over. Pabst meggings offal post-ironic fingerstache.
           </p>
-        </b-media>
       </b-card>
     </div>
   </div>
@@ -45,17 +41,7 @@ h1,
 h2 {
   font-family: "Ubuntu Nerd Font";
   font-weight: bold;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  padding-top: 35px;
 }
 p {
   font-family: Lekton;
