@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg">
       <b-navbar-brand href="/">
-        <b-img :src="require('../assets/BeerMe.svg')" class="img" alt="placeholder"></b-img>
+        <b-img :src="require('../assets/Beer_ME_Logo_4_2020_negatif.png')" class="img" alt="placeholder"></b-img>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
