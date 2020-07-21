@@ -60,6 +60,11 @@ export default {
           id: 3,
           text: "Boissons",
           page: "/drinks"
+        },
+        {
+          id: 4,
+          text: "Apéros Personnalisé",
+          page: "/apero"
         }
       ],
 
