@@ -7,7 +7,7 @@
  * @brief Connection constants
  */
 define('EDB_DBTYPE', "mysql");
-define('EDB_DBNAME', "m152");
+define('EDB_DBNAME', "beerMeDb");
 define('EDB_HOST', "db");
 define('EDB_PORT', "3306");
 define('EDB_USER', "root");
