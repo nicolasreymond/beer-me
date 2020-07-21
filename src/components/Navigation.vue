@@ -70,6 +70,11 @@ export default {
           id: 5,
           text: "Notre Projet",
           page: "/project"
+        },
+        {
+          id: 6,
+          text: "Cadeau Personnalisé",
+          page: "/gift"
         }
       ],
 
