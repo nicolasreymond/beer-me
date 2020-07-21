@@ -48,31 +48,26 @@ export default {
         },
         {
           id: 1,
-          text: "Nouveautés",
-          page: "/news"
-        },
-        {
-          id: 2,
           text: "Contact",
           page: "/contact"
         },
         {
-          id: 3,
+          id: 2,
           text: "Boissons",
           page: "/drinks"
         },
         {
-          id: 4,
+          id: 3,
           text: "Apéros Personnalisé",
           page: "/apero"
         },
         {
-          id: 5,
+          id: 4,
           text: "Notre Projet",
           page: "/project"
         },
         {
-          id: 6,
+          id: 5,
           text: "Cadeau Personnalisé",
           page: "/gift"
         }

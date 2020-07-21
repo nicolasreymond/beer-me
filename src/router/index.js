@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
-import NewsPage from '@/components/NewsPage'
 import LoginPage from '@/components/LoginPage'
 import Register from '@/components/RegisterPage'
 import ContactPage from '@/components/ContactPage'
@@ -16,11 +15,6 @@ export default new Router({
       path: '/home',
       name: 'HomePage',
       component: HomePage
-    },
-    {
-      path: '/news',
-      name: 'NewsPage',
-      component: NewsPage
     },
     {
       path: '/login',
