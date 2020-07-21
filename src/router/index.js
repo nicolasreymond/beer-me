@@ -7,6 +7,7 @@ import Register from '@/components/RegisterPage'
 import ContactPage from '@/components/ContactPage'
 import DrinksMenu from '@/components/DrinksMenu'
 import AperoPage from '@/components/AperoPage'
+import ProjectPage from '@/components/ProjectPage'
 Vue.use(Router)
 
 export default new Router({
@@ -44,6 +45,11 @@ export default new Router({
       path: '/apero',
       name: 'AperoPage',
       component: AperoPage
+    },
+    {
+      path: '/project',
+      name: 'ProjectPage',
+      component: ProjectPage
     },
     // otherwise redirect to home
     {

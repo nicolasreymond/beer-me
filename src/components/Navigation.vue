@@ -65,6 +65,11 @@ export default {
           id: 4,
           text: "Apéros Personnalisé",
           page: "/apero"
+        },
+        {
+          id: 5,
+          text: "Notre Projet",
+          page: "/project"
         }
       ],
 
