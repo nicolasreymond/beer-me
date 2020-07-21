@@ -27,27 +27,27 @@
             return $this->$idABONNEMENT;
         }
             
-        public function getnomAbonnement()
+        public function getNomAbonnement()
         {
             return $this->$nomAbonnement;
         }
         
-        public function getdescriptionAbonnement()
+        public function getDescriptionAbonnement()
         {
             return $this->$descriptionAbonnement;
         }
         
-        public function getdureeAbonnement()
+        public function getDureeAbonnement()
         {
             return $this->$dureeAbonnement;
         }
         
-        public function getnbrBoissonAbonnement()
+        public function getNbrBoissonAbonnement()
         {
             return $this->$nbrBoissonAbonnement;
         }
         
-        public function getprixMensuelAbonnement()
+        public function getPrixMensuelAbonnement()
         {
             return $this->$prixMensuelAbonnement;
         }
@@ -60,27 +60,27 @@
             $this->$idABONNEMENT = $id;
         }
             
-        public function setnomAbonnement($nom)
+        public function setNomAbonnement($nom)
         {
             $this->$nomAbonnement = $nomAbonnement;
         }
         
-        public function setdescriptionAbonnement($description)
+        public function setDescriptionAbonnement($description)
         {
             $this->$descriptionAbonnement = $description;
         }
         
-        public function setdureeAbonnement($duree)
+        public function setDureeAbonnement($duree)
         {
             $this->$dureeAbonnement = $duree;
         }
         
-        public function setnbrBoissonAbonnement($nbrBoisson)
+        public function setNbrBoissonAbonnement($nbrBoisson)
         {
             $this->$nbrBoissonAbonnement = $nbrBoisson;
         }
         
-        public function setprixMensuelAbonnement($prixMensuel)
+        public function setPrixMensuelAbonnement($prixMensuel)
         {
             $this->$prixMensuelAbonnement = $prixMensuel;
         }
