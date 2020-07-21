@@ -8,6 +8,7 @@ import ContactPage from '@/components/ContactPage'
 import DrinksMenu from '@/components/DrinksMenu'
 import AperoPage from '@/components/AperoPage'
 import ProjectPage from '@/components/ProjectPage'
+import GiftPage from '@/components/GiftPage'
 Vue.use(Router)
 
 export default new Router({
@@ -50,6 +51,11 @@ export default new Router({
       path: '/project',
       name: 'ProjectPage',
       component: ProjectPage
+    },
+    {
+      path: '/gift',
+      name: 'GiftPage',
+      component: GiftPage
     },
     // otherwise redirect to home
     {
