@@ -43,12 +43,12 @@ export default {
       linksL: [
         {
           id: 0,
-          text: "Home",
+          text: "Acceuil",
           page: "/home"
         },
         {
           id: 1,
-          text: "News",
+          text: "Nouveautés",
           page: "/news"
         },
         {
@@ -58,7 +58,7 @@ export default {
         },
         {
           id: 3,
-          text: "Drinks",
+          text: "Boissons",
           page: "/drinks"
         }
       ],
@@ -71,7 +71,7 @@ export default {
         },
         {
           id: 1,
-          text: "Register",
+          text: "S'enregistrer",
           page: "/register"
         }
       ]
