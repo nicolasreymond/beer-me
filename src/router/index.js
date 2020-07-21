@@ -6,6 +6,7 @@ import LoginPage from '@/components/LoginPage'
 import Register from '@/components/RegisterPage'
 import ContactPage from '@/components/ContactPage'
 import DrinksMenu from '@/components/DrinksMenu'
+import AperoPage from '@/components/AperoPage'
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +39,11 @@ export default new Router({
       path: '/drinks',
       name: 'DrinksMenu',
       component: DrinksMenu
+    },
+    {
+      path: '/apero',
+      name: 'AperoPage',
+      component: AperoPage
     },
     // otherwise redirect to home
     {
