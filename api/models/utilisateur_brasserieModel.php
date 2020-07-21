@@ -1,6 +1,6 @@
 <?php
 
-    class abonnement
+    class utilisateur_brasserie
     {
         private $idUTILISATEUR_BRASSERIE;
         private $FK_idUTILISATEUR;
@@ -56,7 +56,7 @@
             $this->$FK_idBRASSERIE = $FK_BRASSERIE;
         }
         
-        public function setdateCreation($date)
+        public function setDateCreation($date)
         {
             $this->$dateCreation = $date;
         }
