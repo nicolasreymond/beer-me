@@ -24,7 +24,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: Super
-      MYSQL_DATABASE: m152
+      MYSQL_DATABASE: beerMeDb
     volumes:
       - ./initSQL:/docker-entrypoint-initdb.d
 
