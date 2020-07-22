@@ -1,6 +1,6 @@
 <?php
 
-    class typeApero_boisson
+    class typeApero_boissonModel
     {
         private $idTYPEAPERO_BOISSON;
         private $FK_idTYPEAPERO;

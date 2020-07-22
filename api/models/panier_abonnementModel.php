@@ -1,6 +1,6 @@
 <?php
 
-    class panier_abonnement
+    class panier_abonnementModel
     {
         private $idPANIER_ABONNEMENT;
         private $FK_idPANIER;

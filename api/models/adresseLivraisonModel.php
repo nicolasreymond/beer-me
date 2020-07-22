@@ -1,6 +1,6 @@
 <?php
 
-    class abonnement
+    class adresseLivraisonModel
     {
         private $idADRESSELIVRAISON;
         private $rueLivraison;

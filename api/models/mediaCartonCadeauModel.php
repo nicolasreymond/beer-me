@@ -1,6 +1,6 @@
 <?php
 
-    class mediaCartonCadeau
+    class mediaCartonCadeauModel
     {
         private $idMEDIACARTONCADEAU;
         private $pathMediaCartonCadeau;

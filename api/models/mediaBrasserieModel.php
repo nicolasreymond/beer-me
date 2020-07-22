@@ -1,6 +1,6 @@
 <?php
 
-    class mediaBrasserie
+    class mediaBrasserieModel
     {
         private $idMEDIABRASSERIE;
         private $pathMediaBrasserie;

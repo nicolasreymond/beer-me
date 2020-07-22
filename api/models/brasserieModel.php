@@ -1,6 +1,6 @@
 <?php
 
-    class brasserie
+    class brasserieModel
     {
         private $idBRASSERIE;
         private $nomBrasserie;

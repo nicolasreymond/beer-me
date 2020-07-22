@@ -1,6 +1,6 @@
 <?php
 
-    class boisson_abonnement
+    class boisson_abonnementModel
     {
         private $idBOISSON_ABONNEMENT;
         private $FK_idBOISSON;

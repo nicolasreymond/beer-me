@@ -1,6 +1,6 @@
 <?php
 
-    class typeBoisson
+    class typeBoissonModel
     {
         private $idTYPEBOISSON;
         private $nomTypeBoisson;

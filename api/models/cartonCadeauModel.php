@@ -1,6 +1,6 @@
 <?php
 
-    class cartonCadeau
+    class cartonCadeauModel
     {
         private $idCARTONCADEAU;
         private $textCartonCadeau;

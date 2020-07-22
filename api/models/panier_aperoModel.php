@@ -1,6 +1,6 @@
 <?php
 
-    class panier_apero
+    class panier_aperoModel
     {
         private $idPANIER_APERO;
         private $FK_idPANIER;

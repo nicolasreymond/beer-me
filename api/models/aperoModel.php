@@ -1,6 +1,6 @@
 <?php
 
-    class apero
+    class aperoModel
     {
         private $idAPERO;
         private $nbrParticipentApero;

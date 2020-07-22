@@ -1,6 +1,6 @@
 <?php
 
-    class utilisateur
+    class utilisateurModel
     {
         private $idUTILISATEUR;
         private $nomUTILISATEUR;

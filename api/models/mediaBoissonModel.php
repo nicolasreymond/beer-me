@@ -1,6 +1,6 @@
 <?php
 
-    class mediaBoisson
+    class mediaBoissonModel
     {
         private $idMEDIABOISSON;
         private $pathMediaBoisson;

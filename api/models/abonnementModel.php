@@ -1,6 +1,6 @@
 <?php
 
-    class abonnement
+    class abonnementModel
     {
         private $idABONNEMENT;
         private $nomAbonnement;

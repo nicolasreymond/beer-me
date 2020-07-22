@@ -1,6 +1,6 @@
 <?php
 
-    class typeApero
+    class typeAperoModel
     {
         private $idTYPEAPERO;
         private $nomTypeApero;

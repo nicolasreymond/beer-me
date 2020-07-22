@@ -1,6 +1,6 @@
 <?php
 
-    class commande
+    class commandeModel
     {
         private $idCOMMANDE;
         private $statusCommande;

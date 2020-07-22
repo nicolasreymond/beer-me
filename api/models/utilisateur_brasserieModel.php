@@ -1,6 +1,6 @@
 <?php
 
-    class utilisateur_brasserie
+    class utilisateur_brasserieModel
     {
         private $idUTILISATEUR_BRASSERIE;
         private $FK_idUTILISATEUR;
