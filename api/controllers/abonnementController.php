@@ -15,11 +15,12 @@ class abonnementController
             $stmt->bindParam(':nbrBoisson', $nbrBoisson, PDO::PARAM_INT);
             $stmt->bindParam(':prixMensuel', $prixMensuel, PDO::PARAM_INT);
             $stmt->execute();
-                
+
             return EDatabase::lastInsertId();
         } catch (Exception $e) {
             EDatabase::rollBack();
             echo "erreur de création d'abonnement : " . $e;
+            return false;
         }
     }
 
@@ -34,8 +35,9 @@ class abonnementController
         } catch (Exception $e) {
             EDatabase::rollBack();
             echo "erreur lors du get all abonnements : " . $e;
+            return false;
         }
-            
+
         foreach ($abonnement as $results) {
             echo $abonnement['nomAbonnement'];
             array_push($abonnements, new abonnementModel(
@@ -52,19 +54,45 @@ class abonnementController
     }
 
     public function getAbonnementById ($id){
+      try{
         $sql = "SELECT * FROM ABONNEMENT
                 WHERE idABONNEMENT = :id;";
         $stmt = EDatabase::prepare($sql);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $result = $stmt->fetch(PDO::FETCH_OBJ);
+      }catch (Exception $e){
+        EDatabase::rollBack();
+        echo "problème sur le get d'un abo par l'id : " . $e;
+        return false;
+      }
+
 
         return $abonnement = new abonnementModel(
-                $result['idABONNEMENT'],
-                $result['nomAbonnement'],
-                $result['descriptionAbonnement'],
-                $result['dureeAbonnement'],
-                $result['nbrBoissonAbonnement'],
-                $result['prixMensuelAbonnement']
+          $result['idABONNEMENT'],
+          $result['nomAbonnement'],
+          $result['descriptionAbonnement'],
+          $result['dureeAbonnement'],
+          $result['nbrBoissonAbonnement'],
+          $result['prixMensuelAbonnement']
         );
+    }
+
+    public function delAbonnement ($id){
+      try{
+        $sql = "DELETE FROM ABONNEMENT WHERE id=:id";
+        $stmt = EDatabase::prepare($sql);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+      }catch (Exception $e){
+        EDatabase::rollBack();
+        echo "problème sur le delete d'un abo par l'id : " . $e;
+        return false;
+      }
+
+      return true;
+
+    }
+
+    public function updateAbonnement($id, $nom, $description, $dureeabonnement, $nbrBoisson, $prixMensuel){
+
     }
 }
