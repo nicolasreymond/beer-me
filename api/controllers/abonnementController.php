@@ -6,8 +6,16 @@ class abonnementController
     public function createAbonnement($nom, $description, $dureeabonnement, $nbrBoisson, $prixMensuel)
     {
         try {
-            $sql = "INSERT INTO ABONNEMENT (nomAbonnement, descriptionAbonnement, dureeAbonnement, nbrBoissonAbonnement, prixMensuelAbonnement)
-                                     VALUE (:nom, :desc, :duree, :nbrBoisson, :prixMensuel)";
+            $sql = "INSERT INTO ABONNEMENT (nomAbonnement, 
+                descriptionAbonnement, 
+                dureeAbonnement, 
+                nbrBoissonAbonnement, 
+                prixMensuelAbonnement)
+                    VALUE (:nom, 
+                :desc, 
+                :duree, 
+                :nbrBoisson, 
+                :prixMensuel);";
             $stmt = EDatabase::prepare($sql);
             $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
             $stmt->bindParam(':desc', $description, PDO::PARAM_STR);
@@ -79,7 +87,7 @@ class abonnementController
 
     public function delAbonnement ($id){
       try{
-        $sql = "DELETE FROM ABONNEMENT WHERE id=:id";
+        $sql = "DELETE FROM ABONNEMENT WHERE id = :id;";
         $stmt = EDatabase::prepare($sql);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
       }catch (Exception $e){
@@ -93,6 +101,27 @@ class abonnementController
     }
 
     public function updateAbonnement($id, $nom, $description, $dureeabonnement, $nbrBoisson, $prixMensuel){
+      try {
+        $sql = "UPDATE ABONNEMENT set nomAbonnement = :nom, 
+            set descriptionAbonnement = :desc, 
+            set dureeAbonnement = :duree, 
+            set nbrBoissonAbonnement = :nbrBoisson, 
+            set prixMensuelAbonnement = :prixMensuel)
+                WHERE idABONNEMENT = :id;";
+        $stmt = EDatabase::prepare($sql);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
+        $stmt->bindParam(':desc', $description, PDO::PARAM_STR);
+        $stmt->bindParam(':duree', $dureeabonnement, PDO::PARAM_INT);
+        $stmt->bindParam(':nbrBoisson', $nbrBoisson, PDO::PARAM_INT);
+        $stmt->bindParam(':prixMensuel', $prixMensuel, PDO::PARAM_INT);
+        $stmt->execute();
 
+        return true;
+      } catch (Exception $e) {
+        EDatabase::rollBack();
+        echo "erreur de création d'abonnement : " . $e;
+        return false;
+      }
     }
 }
