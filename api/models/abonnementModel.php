@@ -2,7 +2,7 @@
 
     class abonnementModel
     {
-        private $idABONNEMENT
+        private $idABONNEMENT;
         private $nomAbonnement;
         private $descriptionAbonnement;
         private $dureeAbonnement;
@@ -45,7 +45,7 @@
           }
         }
 
-      public function getAllAbonnements()
+      public static function getAllAbonnements()
       {
         $abonnements = array();
 
@@ -62,7 +62,7 @@
         return $abonnements;
       }
 
-      public function getAbonnementById ($id){
+      public static function getAbonnementById ($id){
         try{
           $sql = "SELECT * FROM ABONNEMENT
                 WHERE idABONNEMENT = :id;";
@@ -76,7 +76,7 @@
         }
       }
 
-      public function delAbonnement ($id){
+      public static function delAbonnement ($id){
         try{
           $sql = "DELETE FROM ABONNEMENT WHERE id = :id;";
           $stmt = EDatabase::prepare($sql);
@@ -91,7 +91,7 @@
 
       }
 
-      public function updateAbonnement($id, $nom, $description, $dureeabonnement, $nbrBoisson, $prixMensuel){
+      public static function updateAbonnement($id, $nom, $description, $dureeabonnement, $nbrBoisson, $prixMensuel){
         try {
           $sql = "UPDATE ABONNEMENT set nomAbonnement = :nom, 
             set descriptionAbonnement = :desc, 
