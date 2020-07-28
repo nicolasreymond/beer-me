@@ -14,4 +14,6 @@ WORKDIR /var/www
 
 CMD composer install ; wait-for-it database:3306 -- bin/console doctrine:migrations:migrate ;  php-fpm
 
+CMD composer require jms/serializer-bundle
+
 EXPOSE 9000
