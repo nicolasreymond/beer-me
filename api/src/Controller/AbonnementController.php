@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  * @package App\Controller
  * @Route("/api", name="api_")
  */
-class AbonnementController extends Controller{
+class AbonnementController extends FOSRestController{
 
   /**
    * Create Abonnement
@@ -39,5 +39,18 @@ class AbonnementController extends Controller{
 
     return $this->handleView($this->view(['status'=>'ok'],Response::HTTP_CREATED));
 
+  }
+
+  /**
+   * Get all abonnements
+   * @Rest/Get("/abonnements")
+   *
+   * @return Response
+   */
+  public function getAbonnements (){
+    $repository = $this->getDoctrine()->getRepository(Abonnement::class);
+    $abonnements = $repository->findall();
+
+    return $this->handleView($this->view($abonnements));
   }
 }

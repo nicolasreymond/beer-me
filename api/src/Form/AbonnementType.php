@@ -10,7 +10,7 @@ use App\Entity\Abonnement;
 
 class AbonnementType extends AbstractType
 {
- public static function buildForm(FormBuilderInterface$builder,array$options){
+ public function buildForm(FormBuilderInterface$builder,array$options){
    $builder
      ->add('nom')
      ->add('description')
@@ -21,7 +21,7 @@ class AbonnementType extends AbstractType
      ->add('save', SubmitType::class);
  }
 
- public static function configureOptions(OptionsResolver $resolver){
+ public function configureOptions(OptionsResolver $resolver){
    $resolver->setDefault(array(
      'data_class' => Abonnement::class,
      'csrf_protection' => false

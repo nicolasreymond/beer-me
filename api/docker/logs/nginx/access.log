@@ -19,3 +19,7 @@
 172.22.0.1 - - [03/Aug/2020:12:05:25 +0000] "GET /api/abonnement HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:79.0) Gecko/20100101 Firefox/79.0"
 172.22.0.1 - - [03/Aug/2020:12:05:31 +0000] "GET /api HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:79.0) Gecko/20100101 Firefox/79.0"
 172.22.0.1 - - [03/Aug/2020:12:10:23 +0000] "POST /api/abonnement HTTP/1.1" 404 153 "-" "PostmanRuntime/7.26.2"
+172.22.0.1 - - [04/Aug/2020:10:06:48 +0000] "GET /api/abonnements HTTP/1.1" 404 153 "-" "PostmanRuntime/7.26.2"
+172.22.0.1 - - [04/Aug/2020:10:07:02 +0000] "GET /api/nginx/abonnements HTTP/1.1" 404 153 "-" "PostmanRuntime/7.26.2"
+172.22.0.1 - - [04/Aug/2020:10:07:14 +0000] "GET /api/nginx/1.19.1/abonnements HTTP/1.1" 404 153 "-" "PostmanRuntime/7.26.2"
+172.22.0.1 - - [04/Aug/2020:10:07:45 +0000] "GET /abonnements HTTP/1.1" 404 153 "-" "PostmanRuntime/7.26.2"
